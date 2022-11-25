@@ -1,8 +1,13 @@
 package com.xp.autobookapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.xp.autobookapp.databinding.ActivityMainBinding
+
+
+private const val ADD_CAR_REQUEST_CODE = 123
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,5 +17,20 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        initClicks()
+    }
+
+    private fun initClicks() {
+        binding.fab.setOnClickListener {
+            startActivityForResult(Intent(this, AddCarActivity::class.java), ADD_CAR_REQUEST_CODE)
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (data == null) return
+        val carMark = data.getStringExtra("CarMark")
+        binding.markTextView.text = carMark
+        binding.showInfoBtn.visibility = View.VISIBLE
     }
 }
