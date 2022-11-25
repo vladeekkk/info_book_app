@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginHorizontal="16dp"
-        android:text="Введите основную информацию по авто"
+        android:text="@string/car_info_activity_title"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="28sp" />
@@ -20,8 +20,8 @@
         android:id="@+id/mark_edt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Марка авто"
         android:layout_marginVertical="16dp"
+        android:hint="@string/car_name_edt"
         android:inputType="text" />
 
     <EditText
@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="16dp"
-        android:hint="Дата начала гарантийного периода"
+        android:hint="@string/guarantee_period_text"
         android:inputType="date" />
 
     <EditText
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="16dp"
-        android:hint="Страна"
+        android:hint="@string/country_text"
         android:inputType="date" />
 
     <EditText
@@ -45,15 +45,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="16dp"
-        android:hint="ФИО владельца" />
+        android:hint="@string/owner_name_text" />
 
     <Button
         android:id="@+id/save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Сохранить"
-        android:layout_marginVertical="20dp"
         android:layout_gravity="center"
-        android:textSize="20sp"
-        />
+        android:layout_marginVertical="20dp"
+        android:text="@string/save_btn_text"
+        android:textSize="20sp" />
 </LinearLayout>

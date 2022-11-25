@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">AutoBookApp</string>
+    <string name="no_observable_car">Нет отслеживаемой машины</string>
+    <string name="add_car_btn_text">Добавить авто</string>
+    <string name="no_car_info_string">Нет данных про авто</string>
+    <string name="show_car_info">Показать инфу по авто</string>
+    <string name="add_car_string">Добавить авто</string>
+    <string name="car_info_activity_title">Введите основную информацию по авто</string>
+    <string name="car_name_edt">Марка авто</string>
+    <string name="guarantee_period_text">Дата начала гарантийного периода</string>
+    <string name="country_text">Страна</string>
+    <string name="owner_name_text">ФИО владельца</string>
+    <string name="save_btn_text">Сохранить</string>
 </resources>
