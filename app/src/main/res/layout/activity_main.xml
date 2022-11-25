@@ -9,15 +9,14 @@
         android:id="@+id/mark_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Нет данных про авто"
-        android:textSize="28sp"
-        />
+        android:text="@string/no_car_info_string"
+        android:textSize="28sp" />
 
     <Button
         android:id="@+id/show_info_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Показать инфу по авто"
+        android:text="@string/show_car_info"
         android:visibility="gone" />
 
 
@@ -26,8 +25,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
-        android:contentDescription="Добавить авто"
-        android:layout_margin="16dp" />
-
-
+        android:layout_margin="16dp"
+        android:contentDescription="@string/add_car_string" />
 </LinearLayout>
